@@ -1,0 +1,203 @@
+body
+{
+  font-family:'Roboto Mono',serif;
+  font-size:16px;
+  margin:0;
+}
+@media (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+}
+header
+{
+  color:white;
+  background-image:url(immagine.jpg);
+  background-size:cover;
+  background-position:center ;
+  height: 700px;
+  position:relative;
+  
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+}
+@media (max-width: 500px) {
+  header {
+    height: 300px;
+    line-height: 1.2;
+  }
+}
+
+header nav
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  padding: 20px;
+  border: 5px,solid,black;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+#Titolo
+{
+font-family:'Robot Mono',serif;  
+font-style: normal;
+letter-spacing: 1px;
+padding: 20px;
+border-radius:30px ;
+font-size: 40px;
+background-color: black;
+color: white;
+}
+@media (max-width: 500px) {
+	#Titolo {
+	  font-size: 1em;
+	}
+}
+#indirizzi a
+{
+margin: 30px;
+font-style: normal;
+letter-spacing: 1px;
+color: white;
+font-family:'Robot Mono',sans-serif ;
+}
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+header h1
+{
+font-family:'Robot Mono',sans-serif ; 
+font-style: normal;
+letter-spacing: 1px;
+font-size: 1em;
+line-height: 1.5;
+text-align:center;
+font-weight: normal;
+text-transform: uppercase;
+
+}
+header h1 a
+{
+  font-size: 15px;
+}
+header h1 strong
+{
+ font-size: 60px;
+ letter-spacing: 3px;
+ color: white;
+}
+@media (max-width: 500px) {
+  header h1 strong {
+    font-size: 2em;
+    letter-spacing: 4px;
+  }
+}
+header h1 a.bottone
+{
+ color: white; 
+ border: 0;
+ display: inline-block;
+ font-size: 30px;
+ border-radius: 10px;
+ background-color: black;
+ padding: 5px;
+}
+section
+{
+margin: 125px 150px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  #section {
+    margin: 40px 10px;
+  }
+}
+
+
+#Contenuti h1
+{
+  font-family:'Robot Mono',sans-serif ; 
+  font-style:italic;
+  background-color: black;
+  color:white;
+  border-radius: 10px;
+  border: 0px;
+  padding:10px;
+
+}
+
+p
+{
+  line-height: 36px;
+}
+
+#contenuti
+{
+  display: flex;
+  justify-content:space-between ;
+}
+#contenuti div
+{
+  flex-grow: 1;
+  padding:20px;
+
+}
+#contenuti img
+{
+  width: 80%;
+}
+@media (max-width: 500px) {
+  #contenuti {
+    flex-direction: column;
+  }
+}
+#menu {
+  display: none;
+}
+
+#menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+@media (max-width: 500px) 
+{
+  #indirizzi {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+}
+
+
+footer
+{
+  font-family:'Robot Mono',sans-serif ; 
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 75px;
+  text-align: center;
+  background-color: gray;
+  color: black;
+}
+footer p
+{
+color:black;
+}
